@@ -1,0 +1,23 @@
+.nav{
+    grid-area: n ;
+    background-color: var(--color-left-menu);
+    padding: 30px;
+
+}
+
+.item {
+    color: var(--white-color);
+}
+
+.item:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--text-day-theme);
+    transition: color .3s ease-in-out;
+}
