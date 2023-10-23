@@ -1,0 +1,28 @@
+:root {
+     --bg-white: #F8F0E4;
+     --text-dark-theme: #F8F0E4;
+     --bg-dark-theme:#1D262D;
+     --text-day-theme:#1D262D;
+     --gold-color: #BB945F;
+     --black-font-color: #000000;
+     --gray-color: #8E8E8E;
+     --white-color: #fff;
+     --color-left-menu: rgba(160,172,253,.8);
+}
+
+.app_wrapper {
+     display: grid;
+     grid-template-areas:
+       'h h'
+       'n c';
+     grid-template-rows: 60px 1fr;
+     grid-template-columns:  2fr 10fr;
+}
+
+.app-wrapper-content {
+   grid-area: c;
+}
+
+
+
+

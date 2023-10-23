@@ -1,0 +1,14 @@
+.header {
+    display: grid;
+    align-items: center;
+    grid-area: h;
+    background-color: var(--bg-dark-theme);
+    border-bottom: 3px solid var(--gold-color);
+    /*max-height: 100px;*/
+}
+
+.header img {
+    width: 50px;
+    border-radius: 50px;
+    margin-left: 30px;
+}
