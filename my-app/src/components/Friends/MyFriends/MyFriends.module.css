@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 30px;
+}
+
+.ava {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin-right: 20px;
+}
+
+.ava:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.nameLink {
+    text-decoration: none;
+    color: var(--black-font-color);
+    text-align: center;
+}

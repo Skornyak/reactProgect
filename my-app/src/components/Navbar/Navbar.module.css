@@ -2,6 +2,7 @@
     grid-area: n ;
     background-color: var(--color-left-menu);
     padding: 30px;
+    width: 250px;
 
 }
 
@@ -25,4 +26,12 @@
 
 .item :global(a.active) {
     color: var(--gold-color );
+}
+
+.friends {
+    display: flex;
+    width: 200px;
+    height: 150px;
+   flex-wrap: wrap;
+    overflow: scroll;
 }

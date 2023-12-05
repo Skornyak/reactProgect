@@ -1,8 +1,17 @@
+import React from 'react';
 import s from './MyPosts.module.css'
 import Post from './Posts/Post'
-const myPosts = (props) => {
+const MyPosts = (props) => {
+    let postElement = props.posts.map((p) => <Post message={p.message} likesCount={p.likesCount}/> );
 
-    let postElement = props.posts.map((p) => <Post message={p.message} likesCount={p.likesCount}/> )
+    const newPostElement =  React.createRef();
+    const onAddPost = () => {
+        props.addPost();
+    };
+    const onPostChange = () => {
+        let text = newPostElement.current.value;
+        props.updateNewPostText(text)
+    };
 
     return(
     <div className={s.container}>
@@ -11,9 +20,13 @@ const myPosts = (props) => {
         </div>
         <div className={s.postWrapper}>
             <form className={s.post_form}>
-                <textarea className={s.textarea_post} placeholder='write post...'></textarea>
+                <textarea onChange={onPostChange}
+                          ref={newPostElement}
+                          value={props.newPostText}
+                          className={s.textarea_post}
+                          placeholder='write post...'/>
                 <div className={s.btnWrapper}>
-                    <button className={s.btn}>Add new post</button>
+                    <button onClick={onAddPost} className={s.btn} type='button' >Add new post</button>
                     <button className={s.btn}>Remove post</button>
                 </div>
             </form>
@@ -22,4 +35,4 @@ const myPosts = (props) => {
     </div>
     )
 }
-export  default myPosts;
+export  default MyPosts;

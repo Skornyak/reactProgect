@@ -1,6 +1,6 @@
 /*import s from "./";*/
 
-const Settings = () => {
+const Settings = (props) => {
     return (
         <div>
             Settings

@@ -1,0 +1,85 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems{
+  padding: 10px;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: var(--text-day-theme);
+}
+
+.dialog:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.messages {
+ padding: 10px;
+}
+
+.message {
+ display: flex;
+ align-items: center;
+    height: 50px;
+    justify-content: end;
+}
+
+.message:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.ava {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin-right: 20px;
+}
+
+.dialogLink {
+    display: flex;
+    align-items: center;
+}
+
+.dialogTextArea {
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+}
+
+.dialogTextArea::placeholder {
+  opacity: 0.7;
+}
+
+.wrapperTextarea {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: end;
+    padding: 30px;
+}
+
+
+.sendMessagButton {
+    border: none;
+    width: 100px;
+    background-color: var(--color-left-menu);
+    border-radius: 20px;
+    padding: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sendMessagButton:hover {
+    opacity: 0.5;
+}
