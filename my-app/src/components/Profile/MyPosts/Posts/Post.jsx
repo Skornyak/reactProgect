@@ -1,12 +1,16 @@
-import s from './Post.module.css'
- const Post = (props) => {
+import React from 'react';
+import s from './Post.module.css';
 
-    return (
-           <div className={s.post_wrapper}>
-               <div className={s.post_ava}></div>
-               <div>{props.message}</div>
-               <span className={s.like}>Like {props.likesCount}</span>
-           </div>
-    )
+function Post({ message, likesCount }) {
+  return (
+    <div className={s.post_wrapper}>
+      <div className={s.post_ava} />
+      <div>{message}</div>
+      <span className={s.like}>
+        Like
+        {likesCount}
+      </span>
+    </div>
+  );
 }
- export default Post;
+export default Post;

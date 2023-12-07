@@ -1,14 +1,15 @@
-import {NavLink} from "react-router-dom";
-import s from "./MyFriends.module.css"
+import { NavLink } from 'react-router-dom';
+import React from 'react';
+import s from './MyFriends.module.css';
 
-const MyFriends = (props) => {
-    let path = "/friends/" + props.id;
-    return(
-        <div className={s.wrapper}>
-            <div className={s.ava}></div>
-            <NavLink className={s.nameLink} to={path}>{props.name}</NavLink>
-        </div>
-    )
-};
+function MyFriends({ id, name }) {
+  const path = `/friends/${id}`;
+  return (
+    <div className={s.wrapper}>
+      <div className={s.ava} />
+      <NavLink className={s.nameLink} to={path}>{name}</NavLink>
+    </div>
+  );
+}
 
 export default MyFriends;

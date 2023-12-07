@@ -1,11 +1,11 @@
-/*import s from "./";*/
+import React from 'react';
 
-const Settings = (props) => {
-    return (
-        <div>
-            Settings
-        </div>
-    )
+function Settings() {
+  return (
+    <div>
+      Settings
+    </div>
+  );
 }
 
 export default Settings;
