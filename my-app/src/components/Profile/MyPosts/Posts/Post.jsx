@@ -1,12 +1,12 @@
 import React from 'react';
-import s from './Post.module.css';
+import style from './Post.module.css';
 
 function Post({ message, likesCount }) {
   return (
-    <div className={s.post_wrapper}>
-      <div className={s.post_ava} />
+    <div className={style.post_wrapper}>
+      <div className={style.post_ava} />
       <div>{message}</div>
-      <span className={s.like}>
+      <span className={style.like}>
         Like
         {likesCount}
       </span>

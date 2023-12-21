@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './MyPosts.module.css';
+import style from './MyPosts.module.css';
 import Post from './Posts/Post';
 
 function MyPosts({
@@ -19,22 +19,22 @@ function MyPosts({
   };
 
   return (
-    <div className={s.container}>
-      <div className={s.content_header}>
+    <div className={style.container}>
+      <div className={style.content_header}>
         New posts
       </div>
-      <div className={s.postWrapper}>
-        <form className={s.post_form}>
+      <div className={style.postWrapper}>
+        <form className={style.post_form}>
           <textarea
             onChange={onPostChange}
             ref={newPostElement}
             value={newPostText}
-            className={s.textarea_post}
+            className={style.textarea_post}
             placeholder="write post..."
           />
-          <div className={s.btnWrapper}>
-            <button onClick={onAddPost} className={s.btn} type="button">Add new post</button>
-            <button type="button" className={s.btn}>Remove post</button>
+          <div className={style.btnWrapper}>
+            <button onClick={onAddPost} className={style.btn} type="button">Add new post</button>
+            <button type="button" className={style.btn}>Remove post</button>
           </div>
         </form>
       </div>

@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import s from './MyFriends.module.css';
+import style from './MyFriends.module.css';
 
 function MyFriends({ id, name }) {
   const path = `/friends/${id}`;
   return (
-    <div className={s.wrapper}>
-      <div className={s.ava} />
-      <NavLink className={s.nameLink} to={path}>{name}</NavLink>
+    <div className={style.wrapper}>
+      <div className={style.ava} />
+      <NavLink className={style.nameLink} to={path}>{name}</NavLink>
     </div>
   );
 }
