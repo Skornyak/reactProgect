@@ -9,18 +9,23 @@ const initialState = {
 };
 const profileReducer = (state, action) => {
   const newState = state || initialState;
+  const copyState = { ...newState };
+  const postId = (Math.random() * 1e8);
   switch (action.type) {
+    /* eslint-disable-next-line react/jsx-no-bind */
     case ADD_POST:
-      newState.posts.push({
-        id: 5,
+      copyState.posts = [...newState.posts];
+      copyState.posts.push({
+        id: postId,
         message: state.newPostText,
         likesCount: 0,
       });
-      newState.newPostText = '';
-      return newState;
+      copyState.newPostText = '';
+      return copyState;
+
     case UPDATE_NEW_POST_TEXT:
-      newState.newPostText = action.newText;
-      return newState;
+      copyState.newPostText = action.newText;
+      return copyState;
 
     default:
       return newState;
