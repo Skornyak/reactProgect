@@ -6,7 +6,7 @@ const initialState = {
   users: [
     {
       id: 1,
-      userPhotoURL: 'https://st5.depositphotos.com/29995906/65439/i/450/depositphotos_654396212-stock-photo-a-lone-tree-is-silhouetted.jpg',
+      userPhotoURL: 'https://kartinki.pics/uploads/posts/2022-03/thumbs/1646527476_2-kartinkin-net-p-kartinki-na-avatarku-dlya-malchikov-3.jpg',
       followed: false,
       fullName: 'Dmitriy',
       status: 'I am a boss',
@@ -14,7 +14,7 @@ const initialState = {
     },
     {
       id: 2,
-      userPhotoURL: 'https://st5.depositphotos.com/29995906/65439/i/450/depositphotos_654396212-stock-photo-a-lone-tree-is-silhouetted.jpg',
+      userPhotoURL: 'https://kartinki.pics/uploads/posts/2022-03/thumbs/1646527476_2-kartinkin-net-p-kartinki-na-avatarku-dlya-malchikov-3.jpg',
       followed: true,
       fullName: 'Mary',
       status: 'I am a boss',
@@ -22,7 +22,7 @@ const initialState = {
     },
     {
       id: 3,
-      userPhotoURL: 'https://st5.depositphotos.com/29995906/65439/i/450/depositphotos_654396212-stock-photo-a-lone-tree-is-silhouetted.jpg',
+      userPhotoURL: 'https://kartinki.pics/uploads/posts/2022-03/thumbs/1646527476_2-kartinkin-net-p-kartinki-na-avatarku-dlya-malchikov-3.jpg',
       followed: true,
       fullName: 'Leon',
       status: 'I am a boss',

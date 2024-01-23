@@ -17,7 +17,6 @@ function Dialogs({
   const messagesElements = messages?.map(
     ({ id, message }) => <Message key={id} messages={message} />,
   );
-
   return (
     <div className={style.dialogs}>
       <div className={style.dialogsItems}>

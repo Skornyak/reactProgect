@@ -3,7 +3,10 @@ import style from './MyPosts.module.css';
 import Post from './Posts/Post';
 
 function MyPosts({
-  newPostText, posts, addPost, updateNewPostText,
+  newPostText,
+  posts,
+  addPost,
+  updateNewPostText,
 }) {
   const postElement = posts.map(
     (p) => <Post key={p.id} message={p.message} likesCount={p.likesCount} />,

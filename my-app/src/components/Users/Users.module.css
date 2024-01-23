@@ -1,5 +1,43 @@
+.content_wrapper {
+    display: flex;
+    margin: 20px 50px 0 20px;
+    justify-content: space-between;
+}
+
 .user_img {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
     background-color: black;
 }
+
+.wrapper_ava {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    border: none;
+    width: 100px;
+    justify-content: center;
+    background-color: var(--color-left-menu);
+    color: var(--);
+    border-radius: 20px;
+    padding: 5px;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.name {
+    font-size: 20px;
+    border-bottom: 1px solid var(--gold-color);
+    width: 100px;
+}
+
+

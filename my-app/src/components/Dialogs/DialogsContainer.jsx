@@ -27,11 +27,12 @@ import Dialogs from './Dialogs';
 //     />
 //   );
 // }
+
 const newMessageElement = React.createRef();
+
 const mapStateToProps = (state) => ({
   dialogsPage: state.dialogsPage,
 });
-
 const mapDispathToProps = (dispatch) => ({
   onDialogChange: () => {
     const message = newMessageElement.current?.value;
