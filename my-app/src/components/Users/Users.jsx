@@ -2,6 +2,9 @@ import React from 'react';
 import style from './Users.module.css';
 
 function Users(props) {
+  if (props.users.length === 0) {
+    props.setUsers();
+  }
   return (
     props.users.map((u) => (
       <div className={style.content_wrapper} key={u.id}>
